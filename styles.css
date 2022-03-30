@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+#component {
+    /* background-color: hsl(216, 12%, 8%); */
+    background-color:hsl(213, 19%, 18%);
+    width: 425px;
+    height: 425px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* center component to middle of page */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+
+
+#image-container {
+    width: 85%;
+    top: 40px;
+}
+
+#star {
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thankyou {
+    display:none;
+}
+
+#selected {
+    width: 50%;
+    height:40px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(25, 97%, 53%);
+    font-size:15px;
+    border-radius:30px;
+    font-weight: 500;
+}
+
+#text-container {
+    align-items: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    color:  hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 500;
+    justify-content:center;
+}
+
+#text-container h1 {
+    color:white;
+    font-weight: 500;
+    margin-bottom:15px;
+    width: 100%;
+    font-size:30px;
+}
+
+.circle {
+    /* background-color: hsl(216, 12%, 8%); */
+    /* background-color:hsl(213, 19%, 18%); */
+    background-color: hsl(216, 12%, 8%);
+
+    height:55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+}
+
+.circle:hover {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+#ratings {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#submit {
+    width: 85%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-size:18px;
+    border-radius:30px;
+    font-weight: 500;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color:white;
+    color: hsl(25, 97%, 53%);
+}
+
+@media only screen and (max-width: 450px) {
+    #component {
+        width: 80%;
+    }
+
+    #submit {
+        font-size: 15px;
+    }
+
+    .circle {
+        height: 40px;
+        width: 40px;
+        font-size:11px;
+    }
+
+    #selected {
+        width:60%;
+    }
+}
